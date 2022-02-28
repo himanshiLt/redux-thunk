@@ -2,8 +2,8 @@
 framework: jest
 preRun:
      command:
-        - yarn install
-        - yarn run build
+        - npm ci
+        - npm run build
 preMerge:
   pattern:
     - "test/test.ts"
@@ -12,5 +12,5 @@ postMerge:
     - "test/test.ts"
 postRun:
      command:
-        - yarn --version
+        - npm --version
 version: 1.0
